@@ -22,7 +22,8 @@
                 </p>
                 <p>
                     I love to work with people who are passionate about their ideas and want to make them a reality.
-                    Continuous learning and improvement are important to me, so I'm always looking for new challenges.
+                    Continuous learning and improvement are an important part of my life, making me a great fit for
+                    fast-paced environments.
                 </p>
                 <p>
                     Having a background in Computer Science, I have worked with a large variety of technologies.
