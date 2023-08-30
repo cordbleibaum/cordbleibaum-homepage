@@ -60,7 +60,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 100vh;
+    min-height: 100vh;
     align-items: center;
     gap: 64px;
 }
