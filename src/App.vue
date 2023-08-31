@@ -3,11 +3,25 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-    <RouterView />
+    <div class="container">
+        <div class="flex-divide">
+            <header>
+                <h1>Cord Bleibaum</h1>
+                <h2>making products from dreams</h2>
+                <div class="menu">
+                    <RouterLink to="/">Home</RouterLink>
+                    <RouterLink to="/">Projects</RouterLink>
+                    <RouterLink to="/">Contact me</RouterLink>
+                    <RouterLink to="/legal">Legal</RouterLink>
+                </div>
+            </header>
+            <RouterView />
+        </div>
+    </div>
 </template>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@300&family=Nunito+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans&display=swap');
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -30,5 +44,42 @@ body {
 
 h1 {
     font-family: 'Montserrat', sans-serif;
+    font-size: 64px;
+    margin: 0;
+    padding: 0;
+}
+
+.flex-divide {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-height: 100vh;
+    align-items: center;
+    gap: 64px;
+}
+
+.flex-divide > * {
+    flex: 1;
+}
+
+.menu {
+    border-top: 2px solid #000;
+    padding-top: 16px;
+}
+
+header {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    padding-right: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.menu {
+    border-top: 2px solid #000;
+    padding-top: 16px;
 }
 </style>
