@@ -28,7 +28,4 @@
 </template>
 
 <style scoped>
-p, li {
-    font-family: 'Open Sans', sans-serif;
-}
 </style>

@@ -86,6 +86,10 @@ a {
     padding-top: 16px;
 }
 
+p, li {
+    font-family: 'Open Sans', sans-serif;
+}
+
 @media screen and (max-width: 1024px) {
     .flex-divide {
         flex-direction: column;

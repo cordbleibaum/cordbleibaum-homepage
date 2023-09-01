@@ -28,10 +28,6 @@ main {
     text-align: center;
 }
 
-p {
-    font-family: 'Open Sans', sans-serif;
-}
-
 .name, .address, .contact {
     margin-bottom: 5px;
 }

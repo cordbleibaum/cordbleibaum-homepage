@@ -9,7 +9,4 @@
 </template>
 
 <style scoped>
-p {
-    font-family: 'Open Sans', sans-serif;
-}
 </style>
