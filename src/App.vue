@@ -74,8 +74,11 @@ header {
 a {
     text-decoration: none;
     color: #000;
-    padding-right: 16px;
     font-family: 'Open Sans', sans-serif;
+}
+
+.menu a {
+    padding-right: 16px;
 }
 
 .menu {
