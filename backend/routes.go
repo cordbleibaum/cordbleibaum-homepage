@@ -8,7 +8,9 @@ import (
 	"strings"
 )
 
-var routes = []route{}
+var routes = []route{
+	newRoute("POST", "/contact", postContact),
+}
 
 func newRoute(method, pattern string, handler http.HandlerFunc) route {
 	return route{method, regexp.MustCompile("^" + pattern + "$"), handler}
