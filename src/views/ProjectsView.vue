@@ -14,9 +14,16 @@
                 MausMover: Developed an iOS app to make the mouse cursor move randomly to prevent the computer from locking as a small side project.
             </li>
             <li>
+                ArcDPS Timer: Developed a timer for the game Guild Wars 2 to accuratly measure group performance in the game. A main challenge was to combine different data sources in order to get the most accurate results.
+                These include an addon API, network, memory mapped files and keypresses, and need to be made consistent in a group of multiple players.
+            </li>
+            <li>
                 This website: Developed this website to showcase my skills and projects.
             </li>
         </ul>
+        <p>
+            If you want to know more about my projects, feel free to contact me.
+        </p>
     </main>
 </template>
 
