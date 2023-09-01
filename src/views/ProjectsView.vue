@@ -11,7 +11,10 @@
                 Furthermore there is an admin panel to manage the cases and the users, supporting the client in his daily work.
             </li>
             <li>
-                
+                MausMover: Developed an iOS app to make the mouse cursor move randomly to prevent the computer from locking as a small side project.
+            </li>
+            <li>
+                This website: Developed this website to showcase my skills and projects.
             </li>
         </ul>
     </main>

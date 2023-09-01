@@ -82,4 +82,15 @@ a {
     border-top: 2px solid #000;
     padding-top: 16px;
 }
+
+@media screen and (max-width: 1024px) {
+    .flex-divide {
+        flex-direction: column;
+        min-height: inherit;
+    }
+
+    header {
+        margin-top: 64px;
+    }
+}
 </style>
