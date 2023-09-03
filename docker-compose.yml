@@ -41,8 +41,10 @@ services:
   backend:
     build: ./backend
     container_name: "backend"
-    env_file:
-      - .env.backend
+    environment:
+      - PORT=3000
+      - MONGODB_URI=mongodb://mongodb:27017/cordbleibaum
+      - MONGODB_DBNAME=cordbleibaum
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.backend.rule=Host(`api.cordbleibaum.de`)"
