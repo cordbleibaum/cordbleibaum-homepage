@@ -50,9 +50,9 @@ func main() {
 		AllowedOrigins: []string{
 			"https://cordbleibaum.com",
 			"https://www.cordbleibaum.com",
-			"http://localhost:3000",
 			"https://cordbleibaum.de",
 			"https://www.cordbleibaum.de",
+			"http://localhost:3000",
 		},
 		AllowCredentials: true,
 		Debug:            false,
