@@ -21,7 +21,15 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans&display=swap');
+@font-face {
+  font-family: 'Montserrat';
+  src: url(@/assets/fonts/Montserrat.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url(@/assets/fonts/OpenSans.ttf) format('truetype');
+}
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -42,8 +50,13 @@ body {
     padding: 0;
 }
 
+h2, h3, h4 {
+    font-family: 'Open Sans', sans-serif;
+}
+
 h1 {
     font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
     font-size: 64px;
     margin: 0;
     padding: 0;

@@ -18,9 +18,9 @@ async function submitForm() {
         })
     })
 
-    name = ''
-    email = ''
-    message = ''
+    name.value = ''
+    email.value = ''
+    message.value = ''
 
     if (response.ok) {
         alert('Your message has been sent!')
