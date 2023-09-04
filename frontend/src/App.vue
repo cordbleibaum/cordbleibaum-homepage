@@ -64,6 +64,10 @@ h1 {
     padding: 0;
 }
 
+h1::first-letter {
+    color: #13b0ba;
+}
+
 .flex-divide {
     display: flex;
     flex-direction: row;
