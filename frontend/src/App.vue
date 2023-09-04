@@ -8,12 +8,12 @@ import { RouterLink, RouterView } from 'vue-router'
             <header>
                 <h1>Cord Bleibaum</h1>
                 <h2>making products from dreams</h2>
-                <div class="menu">
+                <nav>
                     <RouterLink to="/">Home</RouterLink>
                     <RouterLink to="/projects">Projects</RouterLink>
                     <RouterLink to="/contact">Contact me</RouterLink>
                     <RouterLink to="/legal">Legal</RouterLink>
-                </div>
+                </nav>
             </header>
             <RouterView />
         </div>
@@ -75,9 +75,13 @@ h1 {
     flex: 1;
 }
 
-.menu {
+nav {
     border-top: 2px solid #000;
     padding-top: 16px;
+}
+
+nav a {
+    padding-right: 16px;
 }
 
 header {
@@ -88,15 +92,6 @@ a {
     text-decoration: none;
     color: #000;
     font-family: 'Open Sans', sans-serif;
-}
-
-.menu a {
-    padding-right: 16px;
-}
-
-.menu {
-    border-top: 2px solid #000;
-    padding-top: 16px;
 }
 
 p, li {
