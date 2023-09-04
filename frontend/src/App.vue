@@ -23,11 +23,13 @@ import { RouterLink, RouterView } from 'vue-router'
 <style>
 @font-face {
   font-family: 'Montserrat';
+  font-display: swap;
   src: url(@/assets/fonts/Montserrat.ttf) format('truetype');
 }
 
 @font-face {
   font-family: 'Open Sans';
+  font-display: swap;
   src: url(@/assets/fonts/OpenSans.ttf) format('truetype');
 }
 
