@@ -33,6 +33,12 @@ import { RouterLink, RouterView } from 'vue-router'
   src: url(@/assets/fonts/OpenSans.ttf) format('truetype');
 }
 
+:root {
+    --main-color: #000;
+    --accent-color: #13b0ba;
+    --background-color: #fff;
+}
+
 *, *::before, *::after {
     box-sizing: border-box;
 }
@@ -65,7 +71,7 @@ h1 {
 }
 
 h1::first-letter {
-    color: #13b0ba;
+    color: var(--accent-color);
 }
 
 .flex-divide {
@@ -82,7 +88,7 @@ h1::first-letter {
 }
 
 nav {
-    border-top: 2px solid #000;
+    border-top: 2px solid var(--main-color);
     padding-top: 16px;
 }
 
@@ -96,7 +102,7 @@ header {
 
 a {
     text-decoration: none;
-    color: #000;
+    color: var(--main-color);
     font-family: 'Open Sans', sans-serif;
 }
 

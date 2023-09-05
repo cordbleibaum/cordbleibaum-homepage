@@ -5,7 +5,7 @@ const name = ref('')
 const email = ref('')
 const message = ref('')
 
-async function submitForm() {
+async function submit() {
     const response = await fetch('https://api.cordbleibaum.de/contact', {
         method: 'POST',
         headers: {
@@ -74,19 +74,19 @@ input[type="text"], input[type="email"], textarea {
     width: 100%;
     padding: 5px;
     border: 0;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid var(--main-color);
 }
 
 input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
     outline: none;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid var(--main-color);
 }
 
 button {
     max-width: 200px;
     padding: 5px;
-    border: 1px solid #000;
-    background-color: #fff;
+    border: 1px solid var(--main-color);
+    background-color: var(--background-color);
     cursor: pointer;
 }
 </style>
