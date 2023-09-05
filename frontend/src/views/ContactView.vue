@@ -5,7 +5,11 @@ const name = ref('')
 const email = ref('')
 const message = ref('')
 
-async function submit() {
+async function submit(event) {
+    if (event) {
+        event.preventDefault()
+    }
+
     const response = await fetch('https://api.cordbleibaum.de/contact', {
         method: 'POST',
         headers: {
