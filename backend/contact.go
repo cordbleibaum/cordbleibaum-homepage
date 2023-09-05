@@ -28,6 +28,9 @@ func postContact(res http.ResponseWriter, req *http.Request) {
 		return
 	}
 
+	id := primitive.NewObjectID()
+	contact.Id = &id
+
 	_, err = contactCollection.InsertOne(ctx, contact)
 
 	if err != nil {
