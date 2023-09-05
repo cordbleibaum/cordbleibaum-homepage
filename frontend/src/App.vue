@@ -34,7 +34,7 @@ import { RouterLink, RouterView } from 'vue-router'
 }
 
 :root {
-    --main-color: #000;
+    --main-color: #151515;
     --accent-color: #13b0ba;
     --background-color: #fff;
 }
@@ -51,6 +51,7 @@ import { RouterLink, RouterView } from 'vue-router'
 
 html {
     font-family: sans-serif;
+    color: var(--main-color);
 }
 
 body {
