@@ -25,7 +25,7 @@
         </p>
         <h4>Contact form</h4>
         <p>
-            The data you enter in the contact form is sent to me via email, on the basis of your consent.
+            The data you enter in the contact form is stored and sent to me via email, on the basis of your consent.
             It is stored for the duration of the conversation and deleted afterwards, or in a regular interval of 6 months.
             The data is used to contact you and is not shared with third parties.
         </p>
