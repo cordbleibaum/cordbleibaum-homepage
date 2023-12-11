@@ -6,6 +6,7 @@ services:
     container_name: "traefik"
     command:
       - "--providers.docker=true"
+      - "--providers.docker.network=traefik"
       - "--providers.docker.exposedbydefault=false"
       - "--entrypoints.web.address=:80"
       - "--entrypoints.websecure.address=:443"
@@ -34,6 +35,9 @@ services:
       - "traefik.http.routers.frontend.rule=Host(`www.cordbleibaum.de`, `cordbleibaum.de`, `www.cordbleibaum.com`, `cordbleibaum.com`)"
       - "traefik.http.routers.frontend.entrypoints=websecure"
       - "traefik.http.routers.frontend.tls.certresolver=myresolver"
+    networks:
+      - traefik
+      - default
 
   mongodb:
     image: mongo
@@ -57,6 +61,9 @@ services:
       - "traefik.http.routers.backend.tls.certresolver=myresolver"
     depends_on:
       - mongodb
+    networks:
+      - traefik
+      - default
 
 networks:
   traefik:
