@@ -21,6 +21,9 @@ services:
     volumes:
       - "/var/run/docker.sock:/var/run/docker.sock:ro"
       - "./letsencrypt:/letsencrypt"
+    networks:
+      - traefik
+      - default
 
   frontend:
     build:
@@ -54,3 +57,9 @@ services:
       - "traefik.http.routers.backend.tls.certresolver=myresolver"
     depends_on:
       - mongodb
+
+networks:
+  traefik:
+    external: true
+  default:
+    driver: bridge
